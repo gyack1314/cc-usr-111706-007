@@ -1,0 +1,33 @@
+{
+  "allowed_origins": [
+    "https://county.example.test"
+  ],
+  "steps": [
+    {
+      "request": {
+        "method": "GET",
+        "url": "https://county.example.test/noise-complaint/primary",
+        "body_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "response": {
+        "file": "source-1.bin",
+        "status": 200,
+        "bytes": 103,
+        "sha256": "38325b8052444871bd5f17e6e0eabfbda6c055699325a9503fd4e2dfc71acfcd"
+      }
+    },
+    {
+      "request": {
+        "method": "GET",
+        "url": "https://county.example.test/noise-complaint/primary",
+        "body_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "response": {
+        "file": "source-conflict.bin",
+        "status": 200,
+        "bytes": 103,
+        "sha256": "fd42c6c8a6ae2ab00356f969d68aed604f30dc7631cf5a88df1cbdbf9899c741"
+      }
+    }
+  ]
+}
